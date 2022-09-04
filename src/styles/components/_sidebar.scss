@@ -1,9 +1,11 @@
 /* stylelint-disable */
 .sidebar {
   @include media(">=desktop") {
-    width: 279px;
-    will-change: min-height;
+    //width: 279px;
+    //will-change: min-height;
   }
+
+  
 
   &__inner {
     @include media(">=tablet") {
@@ -14,11 +16,13 @@
     }
 
     @include media(">=desktop") {
-      transform: translate(0, 0);
+     /*  transform: translate(0, 0);
       transform: translate3d(0, 0, 0);
-      will-change: position, transform;
+      will-change: position, transform; */
       display: block;
-      width: 279px !important;
+      //width: 279px !important;
+      position: sticky;
+      top: 0;
     }
   }
 }

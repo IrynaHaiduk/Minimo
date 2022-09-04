@@ -36,20 +36,13 @@ $dark-grey: #333;
 $light: #f0f0f0;
 $smoke: #f2f2f2;
 $greyish: #c8c8c8;
-// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-$yiq-contrasted-threshold: 150;
-
-// Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark: $black;
-$yiq-text-light: $white;
 
 // body
-//
-// settings for the `<body>` element.
 
 $body-bg: $white;
 $body-color: $grey;
 
+//link
 $link-color: inherit;
 $link-decoration: none;
 $link-hover-decoration: none;
@@ -66,44 +59,8 @@ $font-family-serif: 'Playfair Display', 'Baskerville', 'Georgia', serif;
 $font-family-sans-serif: 'Ubuntu', 'Arial', 'Noto Sans', sans-serif;
 $font-family-base: $font-family-serif;
 $base-font-path: '../fonts';
-
 $line-height-base: 1.5;
 $rem-base: 10px;
-
-// container max width, used for .container element
-$gutter: 15px;
-$container-max-width: 1140px + $gutter * 2;
-
-$font-weight-thin: 100;
-$font-weight-ulight: 200;
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-medium: 500;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
-$font-weight-heavy: 800;
-$font-weight-black: 900;
-
-$font-sizes: (
-  'xl': 18px,
-  'lg': 16px,
-  'base': 14px,
-  'md': 12px,
-  'sm': 10px,
-);
-
-$headings-sizes: (
-  'h1': 30px,
-  'h2': 26px,
-  'h3': 22px,
-  'h4': 20px,
-  'h5': 18px,
-  'h6': 16px,
-);
-
-$headings-margin-bottom: 1em;
-$headings-font-weight: inherit;
-$headings-line-height: 1.2;
 
 // Paragraphs
 

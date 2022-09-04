@@ -2,14 +2,12 @@ import initResetForm from 'Components/resetForm';
 import ready, { HTML } from './utils';
 import initSlick from 'Components/slick';
 import changeMenuStyles from 'Components/changeMenuStyles';
-import initStikySidebar from 'Components/stickySidebarFunc';
 
 ready(() => {
   HTML.classList.add('is-loaded');
   initResetForm();
   initSlick();
   changeMenuStyles();
-  initStikySidebar();
   
   // vh
   (function (window, document) {

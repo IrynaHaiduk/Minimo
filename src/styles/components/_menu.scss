@@ -31,7 +31,7 @@
       top: 7px;
       left: 50%;
       transform: translateX(-50%);
-      background-color: #000;
+      background-color: $black;
 
       &::before {
         content: "";
@@ -41,7 +41,7 @@
         transition-timing-function: ease;
         transition-duration: .15s;
         transition-property: transform;
-        background-color: #000;
+        background-color: $black;
         left: 50%;
         transform: translateX(-50%);
         top: 6px;
@@ -55,7 +55,7 @@
         transition-timing-function: ease;
         transition-duration: .15s;
         transition-property: transform;
-        background-color: #000;
+        background-color: $black;
         left: 0;
         top: 12px;
       }

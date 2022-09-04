@@ -10,6 +10,10 @@ body {
   width: 100%;
   position: relative;
   overflow: hidden;
+
+  @include media(">=desktop") {
+    overflow: initial;
+  }
 }
 
 .container {

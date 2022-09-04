@@ -1,7 +1,15 @@
 /* stylelint-disable */
 .columns {
-  margin-bottom: 39px;
+  margin-bottom: 60px;
   padding-top: 2px;
+
+  @include media(">=tablet") {
+    margin-bottom: 80px;
+  }
+
+  @include media(">=desktop") {
+    margin-bottom: 39px;
+  }
 
   .container-big {
     position: relative;
@@ -19,5 +27,4 @@
       max-width: 659px;
     }
   }
-  
 }
