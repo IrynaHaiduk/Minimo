@@ -1,0 +1,24 @@
+/* stylelint-disable */
+.sidebar {
+  @include media(">=desktop") {
+    width: 279px;
+    will-change: min-height;
+  }
+
+  &__inner {
+    @include media(">=tablet") {
+      padding-top: 5px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 50px;
+    }
+
+    @include media(">=desktop") {
+      transform: translate(0, 0);
+      transform: translate3d(0, 0, 0);
+      will-change: position, transform;
+      display: block;
+      width: 279px !important;
+    }
+  }
+}

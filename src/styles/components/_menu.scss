@@ -1,0 +1,160 @@
+/* stylelint-disable */
+.menu {
+  &-opener {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    left: auto;
+    top: 48%;
+    transform: translateY(-50%);
+
+    .menu-active & {
+      top: 42%;
+    }
+
+    @include media(">=desktop") {
+      display: none;
+    }
+
+    &__inner {
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      right: 0;
+      top: 7px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #000;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        transition-timing-function: ease;
+        transition-duration: .15s;
+        transition-property: transform;
+        background-color: #000;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 6px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        transition-timing-function: ease;
+        transition-duration: .15s;
+        transition-property: transform;
+        background-color: #000;
+        left: 0;
+        top: 12px;
+      }
+    }
+  }
+
+  &-active .menu-opener__inner {
+    top: 17px;
+    background-color: transparent !important;
+
+    &::before {
+      top: -2px;
+      transform: rotate(45deg);
+      left: 0;
+    }
+
+    &::after {
+      top: -2px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.menubar {
+  @include media(">=desktop") {
+    display: flex;
+    align-items: center;
+    max-width: 580px;
+  }
+
+  >li {
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+
+      @include media(">=desktop") {
+        margin-bottom: 0;
+        margin-right: 94px;
+      }
+
+      &:nth-of-type(1) {
+        margin-right: 121px;
+      }
+
+      &:nth-of-type(2) {
+        margin-right: 103px;
+      }
+    }
+
+    >a {
+      @extend .category;
+      font-family: $font-family-base;
+      display: block;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}
+
+.menu-slide {
+  @include media("<desktop") {
+    background-color: $body-bg;
+    perspective: 100px;
+    transform: translateX(100%);
+    transition: transform .5s;
+    z-index: 5;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  @include media(">=desktop") {
+    position: relative;
+    top: auto;
+    z-index: 1;
+    transform: none;
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    padding: 0;
+  }
+}
+
+.menu-active .menu-slide {
+  transform: translateX(0);
+}

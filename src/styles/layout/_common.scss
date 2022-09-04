@@ -1,0 +1,100 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the common layout of the site
+// -----------------------------------------------------------------------------
+/* stylelint-disable */
+body {
+  background-color: $body-bg;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 939px;
+}
+
+.container-big {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1101px;
+}
+
+// skip links
+.accessibility {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+}
+
+.title {
+  line-height: normal;
+  font-size: 25px;
+  font-weight: 400;
+
+  @include media(">=tablet") {
+    font-size: 28px;
+  }
+
+  @include media(">=desktop") {
+    font-size: 30px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+
+    @include media(">=tablet") {
+      margin-bottom: 20px;
+    }
+
+    @include media(">=desktop") {
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.category {
+  display: inline-block;
+  font-family: $font-family-sans-serif;
+  color: $light-grey;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+
+  @include media(">=tablet") {
+    font-size: 14px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @include media(">=tablet") {
+      margin-bottom: 12px;
+    }
+
+    @include media(">=desktop") {
+      margin-bottom: 14px;
+    }
+  }
+}
+
+// disable css transitions on window resize
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}

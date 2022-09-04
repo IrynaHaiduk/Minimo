@@ -1,0 +1,127 @@
+/* stylelint-disable */
+.comments {
+  margin-bottom: 60px;
+
+  @include media(">=tablet") {
+    margin-bottom: 88px;
+  }
+
+  &__list {
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    margin-bottom: 13px;
+  }
+
+  &__category.category {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+
+      @include media(">=tablet") {
+        margin-bottom: 25px;
+      }
+
+      @include media(">=desktop") {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  &__item {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 60px 1fr;
+    column-gap: 15px;
+    row-gap: 3px;
+
+    @include media(">=tablet") {
+      grid-template-columns: 70px 1fr;
+      column-gap: 37px;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 46px;
+    }
+  }
+
+  &__btn {
+    grid-column-start: -2;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &__user {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+
+    &:not(:last-child) {
+      margin-bottom: 6px;
+
+      @include media(">=tablet") {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    height: 60px;
+
+    @include media(">=tablet") {
+      height: 70px;
+      margin-top: 5px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__socials.socials {
+    text-align: center;
+
+    @include media(">=tablet") {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .socials {
+      &__text.category {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+
+          @include media(">=tablet") {
+            margin-bottom: 0;
+            margin-right: 38px;
+          }
+        }
+      }
+
+      &__list.socials {
+        &__item {
+          &:not(:last-of-type) {
+            margin-right: 16px;
+          }
+        }
+
+        &__link {
+          img {
+            max-width: 18px;
+            max-height: 17px;
+          }
+        }
+      }
+    }
+  }
+}

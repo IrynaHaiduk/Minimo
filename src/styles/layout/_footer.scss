@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site
+// -----------------------------------------------------------------------------
+/* stylelint-disable */
+.footer {
+  background-color: $light;
+  color: $black;
+  padding-top: 35px;
+  padding-bottom: 40px;
+
+  @include media(">=desktop") {
+    padding-left: 70px;
+  }
+
+  .container-big {
+    max-width: 1027px;
+
+    @include media(">=tablet") {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include media(">=desktop") {
+      padding-left: 27px;
+    }
+  }
+
+  &__socials,
+  &__links {
+    @include media(">=tablet") {
+      width: 40%;
+    }
+  }
+}

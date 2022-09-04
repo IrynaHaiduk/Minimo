@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- page title -->
+  <title>Minimo</title>
+  <!-- include jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <!-- include jQuery library local file if cdn link doesn't work -->
+  <script>window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js" defer><\/script>')</script>
+</head>
+
+<body>
+  <a class="accessibility" href="#main">Skip to Content</a>
+  <noscript>
+    <div>Javascript must be enabled for the correct page display</div>
+  </noscript>
+  <div class="wrapper">
+    <header class="header js-header">
+      <!-- header content -->
+      <div class="container-big">
+        <a href="#" class="logo">
+          <img src="images/minimø-logo.png" srcset="images/minimø-logo@2x.png" alt="Minimø logo">
+        </a>
+        <div class='menu-container'>
+          <button class="menu-opener js-opener" aria-expanded="false" aria-label="Toggle menu">
+            <span class="menu-opener__inner"></span>
+          </button>
+          <nav class="menu-slide js-menu">
+            <ul class="menubar" role="menubar">
+              <li role="none">
+                <a role="menuitem" href="#">
+                  Lifestyle
+                </a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="#">
+                  Photodiary
+                </a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="#">
+                  Music
+                </a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="#">
+                  Travel
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="page-holder">
+      <main id="main">
+        <h1 class="visually-hidden">Post page</h1>
+        <div class="img-slider">
+          <div class="container-big">
+            <div class="img-slider__list">
+              <div class="img-slider__item">
+                <img src="images/slider.jpg" srcset="images/slider@2x.jpg" alt="picture in slider 1">
+              </div>
+              <div class="img-slider__item">
+                <img src="images/article-2.jpg" srcset="images/article-2@2x.jpg" alt="picture in slider 3">
+              </div>
+              <div class="img-slider__item">
+                <img src="images/slider.jpg" srcset="images/slider@2x.jpg" alt="picture in slider 1">
+              </div>
+              <div class="img-slider__item">
+                <img src="images/article-2.jpg" srcset="images/article-2@2x.jpg" alt="picture in slider 3">
+              </div>
+              <div class="img-slider__item">
+                <img src="images/slider.jpg" srcset="images/slider@2x.jpg" alt="picture in slider 1">
+              </div>
+              <div class="img-slider__item">
+                <img src="images/article-2.jpg" srcset="images/article-2@2x.jpg" alt="picture in slider 3">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="container-big main" id="main-content">
+            <div class="columns__content content" id="content">
+              <article class="info-article">
+                <span class="info-article__category  category">
+                  Photodiary
+                </span>
+                <h2 class="info-article__title title">
+                  The perfect weekend getaway
+                </h2>
+                <div class="info-article__block">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <b>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</b> totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                  </p>
+                  <img src="images/article-col-1.jpg" srcset="images/article-col-1@2x.jpg" alt="image in article 1">
+                  <img src="images/article-col-2.jpg" srcset="images/article-col-2@2x.jpg" alt="image in article 2">
+                  <img src="images/article-col-3.jpg" srcset="images/article-col-3@2x.jpg" alt="image in article 3">
+                  <blockquote>
+                    “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.”
+                  </blockquote>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla <b>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                  </p>
+                </div>
+                <div class="info-article__socials socials">
+                  <p class="socials__text category">
+                    Share
+                  </p>
+                  <ul class="socials__list">
+                    <li class="socials__item">
+                      <a class="socials__link" href="#" target="_blank" aria-label="Share on Facebook (opens in a new tab)">
+                        <img src="images/fb-icon.png" srcset="images/fb-icon@2x.png" alt="facebook icon">
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <a class="socials__link" href="#" target="_blank" aria-label="Share on Twitter (opens in a new tab)">
+                        <img src="images/tw-icon.png" srcset="images/tw-icon@2x.png" alt="twitter icon">
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <a class="socials__link" href="#" target="_blank" aria-label="Share on Google Plus (opens in a new tab)">
+                        <img src="images/g+-icon.png" srcset="images/g+-icon@2x.png" alt="google plus icon">
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <a class="socials__link" href="#" target="_blank" aria-label="Share on Tumblr (opens in a new tab)">
+                        <img src="images/tumblr-icon.png" srcset="images/tumblr-icon@2x.png" alt="tumblr icon">
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <a class="socials__link" href="#" target="_blank" aria-label="Share on Pinterest (opens in a new tab)">
+                        <img src="images/pinterest-icon.png" srcset="images/pinterest-icon@2x.png" alt="pinterest icon">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <aside class="columns__sidebar sidebar" id="sidebar">
+              <div class="sidebar__inner">
+                <section class="about-block">
+                  <a href="#" class="about-block__link">
+                    <div class="about-block__img">
+                      <img src="images/about-block.jpg" srcset="images/about-block@2x.jpg" alt="About me">
+                    </div>
+                    <div class="about-block__info">
+                      <h2 class="about-block__title">About me</h2>
+                      <div class="about-block__text">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="about-block__socials socials">
+                    <ul class="socials__list">
+                      <li class="socials__item">
+                        <a class="socials__link" href="#" target="_blank" aria-label="Share on Facebook (opens in a new tab)">
+                          <img src="images/fb-icon.png" srcset="images/fb-icon@2x.png" alt="facebook icon">
+                        </a>
+                      </li>
+                      <li class="socials__item">
+                        <a class="socials__link" href="#" target="_blank" aria-label="Share on Instagram (opens in a new tab)">
+                          <img src="images/insta-icon.png" srcset="images/insta-icon@2x.png" alt="Instagram icon">
+                        </a>
+                      </li>
+                      <li class="socials__item">
+                        <a class="socials__link" href="#" target="_blank" aria-label="Share on Pinterest (opens in a new tab)">
+                          <img src="images/pinterest-icon.png" srcset="images/pinterest-icon@2x.png" alt="pinterest icon">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+                <section class="posts-block">
+                  <h2 class="posts-block__caption category">
+                    Top posts
+                  </h2>
+                  <ul class="posts-block__list">
+                    <li class="posts-block__item">
+                      <a href="#" class="posts-block__link">
+                        <h3 class="posts-block__title">
+                          A day exploring the Alps
+                        </h3>
+                        <p class="posts-block__text category">
+                          24 comments
+                        </p>
+                      </a>
+                    </li>
+                    <li class="posts-block__item">
+                      <a href="#" class="posts-block__link">
+                        <h3 class="posts-block__title">
+                          American dream
+                        </h3>
+                        <p class="posts-block__text category">
+                          19 comments
+                        </p>
+                      </a>
+                    </li>
+                    <li class="posts-block__item">
+                      <a href="#" class="posts-block__link">
+                        <h3 class="posts-block__title">
+                          Cold winter days
+                        </h3>
+                        <p class="posts-block__text category">
+                          15 comments
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+                <div class="banner-block">
+                  <a href="#" class="banner-block__link">
+                    <div class="banner-block__img">
+                      <img src="images/banner.jpg" srcset="images/banner@2x.jpg" alt="banner">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <section class="articles-gallery">
+          <div class="container">
+            <p class="articles-gallery__category category">
+              You may also like
+            </p>
+            <ul class="articles-gallery__list">
+              <li class="articles-gallery__item">
+                <a href="" class="articles-gallery__link">
+                  <div class="articles-gallery__img">
+                    <img src="images/gallery-6.jpg" srcset="images/gallery-6@2x.jpg" alt="Cold winter days">
+                  </div>
+                  <h3 class="articles-gallery__title">
+                    Cold winter days
+                  </h3>
+                </a>
+              </li>
+              <li class="articles-gallery__item">
+                <a href="" class="articles-gallery__link">
+                  <div class="articles-gallery__img">
+                    <img src="images/gallery-3.jpg" srcset="images/gallery-3@2x.jpg" alt="A day exploring the Alps">
+                  </div>
+                  <h3 class="articles-gallery__title">
+                    A day exploring the Alps
+                  </h3>
+                </a>
+              </li>
+              <li class="articles-gallery__item">
+                <a href="" class="articles-gallery__link">
+                  <div class="articles-gallery__img">
+                    <img src="images/gallery-4.jpg" srcset="images/gallery-4@2x.jpg" alt="American dream">
+                  </div>
+                  <h3 class="articles-gallery__title">
+                    American dream
+                  </h3>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="comments">
+          <div class="container">
+            <p class="comments__category category">
+              2 comments
+            </p>
+            <ol class="comments__list">
+              <li class="comments__item">
+                <div class="comments__img">
+                  <img src="images/avatar-1.jpg" srcset="images/avatar-1@2x.jpg" alt="">
+                </div>
+                <div class="comments__inner">
+                  <h3 class="comments__user">
+                    John Doe
+                  </h3>
+                  <div class="comments__text">
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo!
+                    </p>
+                  </div>
+                </div>
+                <a href="#" class="comments__btn category">
+                  Reply
+                </a>
+              </li>
+              <li class="comments__item">
+                <div class="comments__img">
+                  <img src="images/avatar-2.jpg" srcset="images/avatar-2@2x.jpg" alt="">
+                </div>
+                <div class="comments__inner">
+                  <h3 class="comments__user">
+                    John Doe
+                  </h3>
+                  <div class="comments__text">
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+                    </p>
+                  </div>
+                </div>
+                <a href="#" class="comments__btn category">
+                  Reply
+                </a>
+              </li>
+              <li class="comments__item">
+                <div class="comments__img">
+                  <img src="images/avatar-3.jpg" srcset="images/avatar-3@2x.jpg" alt="">
+                </div>
+                <form class="comments__form comments-form js-form" method="POST" name="comments" action="#">
+                  <div class="comments-form__inner">
+                    <label class="visually-hidden" for="response">Join the discussion</label>
+                    <textarea class="comments-form__textarea" id="response" name="response" placeholder="Join the discussion"></textarea>
+                  </div>
+                  <button class="comments-form__btn visually-hidden" type="submit" name="submit">
+                    Leave a comment
+                  </button>
+                </form>
+              </li>
+            </ol>
+            <div class="comments__socials socials">
+              <p class="socials__text category"> Connected with</p>
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a class="socials__link" href="#" target="_blank" aria-label="Connected with Twitter (opens in a new tab)">
+                    <img src="images/tw-icon.png" srcset="images/tw-icon@2x.png" alt="twitter icon">
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#" target="_blank" aria-label="Connected with Facebook (opens in a new tab)">
+                    <img src="images/fb-icon-2.png" srcset="images/fb-icon-2@2x.png" alt="facebook icon">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <!-- footer content -->
+      <div class="container-big">
+        <div class="footer__links external-info">
+          <ul class="external-info__list">
+            <li class="external-info__item">
+              <a href="#" target="_blank" class="external-info__link">
+                Terms and conditions
+              </a>
+            </li>
+            <li class="external-info__item">
+              <a href="#" target="_blank" class="external-info__link">
+                Privacy
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socials socials">
+          <p class="socials__text">Follow</p>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="#" target="_blank" aria-label="Follow on Facebook (opens in a new tab)">
+                <img src="images/facebook.png" srcset="images/facebook@2x.png" alt="facebook icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" target="_blank" aria-label="Follow on Twitter (opens in a new tab)">
+                <img src="images/twitter.png" srcset="images/twitter@2x.png" alt="twitter icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" target="_blank" aria-label="Follow on Instagram (opens in a new tab)">
+                <img src="images/instagram.png" srcset="images/instagram@2x.png" alt="instagram icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

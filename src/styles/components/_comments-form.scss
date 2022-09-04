@@ -1,0 +1,52 @@
+/* stylelint-disable */
+.comments-form {
+  &__textarea {
+    @include transition(opacity visibility);
+    font: inherit;
+    color: $body-color;
+    width: 100%;
+    resize: none;
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid $greyish;
+    padding: 10px 16px;
+
+    @include media(">=tablet") {
+      padding: 15px 25px;
+    }
+
+    @include media(">=desktop") {
+      padding: 21px 31px;
+    }
+
+    &::placeholder {
+      @extend .category;
+      color: $greyish;
+      font-size: 10px;
+
+      @include media(">=tablet") {
+        font-size: 12px;
+      }
+
+      @include media(">=desktop") {
+        font-size: 14px;
+      }
+    }
+
+    &:focus::placeholder {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}

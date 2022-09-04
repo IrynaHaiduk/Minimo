@@ -1,0 +1,23 @@
+/* stylelint-disable */
+.columns {
+  margin-bottom: 39px;
+  padding-top: 2px;
+
+  .container-big {
+    position: relative;
+
+    @include media(">=desktop") {
+      display: grid;
+      grid-template-columns: 1fr 279px;
+      justify-items: end;
+      column-gap: 43px;
+    }
+  }
+
+  &__content {
+    @include media(">=desktop") {
+      max-width: 659px;
+    }
+  }
+  
+}

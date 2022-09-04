@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+/* stylelint-disable */
+.btn {
+  @include transition(color background-color);
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding: 13px 27px;
+  flex-shrink: 0;
+  border: 1px solid $grey;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+
+  &--white {
+    color: $grey;
+    background-color: $white ;
+
+    &:hover,
+    &:focus {
+      color: $white ;
+      background-color: $black;
+    }
+  }
+
+  @include media('>=tablet') {
+    padding: 14px 30px;
+    font-size: 18px;
+  }
+
+  @include media('>=desktop') {
+    padding: 15px 33px 16px;
+    font-size: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    border-radius: 0;
+    outline: none;
+  }
+}

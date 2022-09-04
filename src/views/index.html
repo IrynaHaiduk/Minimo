@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- page title -->
+  <title>Minimo</title>
+  <!-- include jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <!-- include jQuery library local file if cdn link doesn't work -->
+  <script>window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js" defer><\/script>')</script>
+</head>
+
+<body>
+  <a class="accessibility" href="#main">Skip to Content</a>
+  <noscript>
+    <div>Javascript must be enabled for the correct page display</div>
+  </noscript>
+  <div class="wrapper">
+    <header class="header js-header">
+      <!-- header content -->
+      <div class="container-big">
+        <a href="#" class="logo">
+          <img src="images/minimø-logo.png" srcset="images/minimø-logo@2x.png" alt="Minimø logo">
+        </a>
+        <div class='menu-container'>
+          <button class="menu-opener js-opener" aria-expanded="false" aria-label="Toggle menu">
+            <span class="menu-opener__inner"></span>
+          </button>
+          <nav class="menu-slide js-menu">
+            <ul class="menubar" role="menubar">
+              <li role="none">
+                <a role="menuitem" href="#">
+                  Lifestyle
+                </a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="#">
+                  Photodiary
+                </a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="#">
+                  Music
+                </a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="#">
+                  Travel
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="page-holder">
+      <main id="main">
+        <h1 class="visually-hidden">Main page</h1>
+        <div class="img-slider">
+          <div class="container-big">
+            <div class="img-slider__list">
+              <div class="img-slider__item">
+                <img src="images/slider.jpg" srcset="images/slider@2x.jpg" alt="picture in slider 1">
+              </div>
+              <div class="img-slider__item">
+                <img src="images/article-2.jpg" srcset="images/article-2@2x.jpg" alt="picture in slider 3">
+              </div>
+              <div class="img-slider__item">
+                <img src="images/slider.jpg" srcset="images/slider@2x.jpg" alt="picture in slider 1">
+              </div>
+              <div class="img-slider__item">
+                <img src="images/article-2.jpg" srcset="images/article-2@2x.jpg" alt="picture in slider 3">
+              </div>
+              <div class="img-slider__item">
+                <img src="images/slider.jpg" srcset="images/slider@2x.jpg" alt="picture in slider 1">
+              </div>
+              <div class="img-slider__item">
+                <img src="images/article-2.jpg" srcset="images/article-2@2x.jpg" alt="picture in slider 3">
+              </div>
+            </div>
+          </div>
+        </div>
+        <article class="info-article">
+          <div class="container">
+            <span class="info-article__category  category">
+              Photodiary
+            </span>
+            <h2 class="info-article__title title">
+              The perfect weekend getaway
+            </h2>
+            <div class="info-article__block">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+              </p>
+            </div>
+            <a href="#" class="info-article__link">
+              Leave a comment
+            </a>
+          </div>
+        </article>
+        <section class="gallery">
+          <div class="container">
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <a href="#" class="gallery__link">
+                  <div class="gallery__img">
+                    <img src="images/gallery-1.jpg" srcset="images/gallery-1@2x.jpg" alt="More than just a music festival">
+                  </div>
+                  <span class="gallery__category  category">
+                    Lifestyle
+                  </span>
+                  <h3 class="gallery__title title">
+                    More than just a music festival
+                  </h3>
+                  <div class="gallery__text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item">
+                <a href="#" class="gallery__link">
+                  <div class="gallery__img">
+                    <img src="images/gallery-2.jpg" srcset="images/gallery-2@2x.jpg" alt="Life tastes better with coffee">
+                  </div>
+                  <span class="gallery__category  category">
+                    Lifestyle
+                  </span>
+                  <h3 class="gallery__title title">
+                    Life tastes better with coffee
+                  </h3>
+                  <div class="gallery__text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item">
+                <a href="#" class="gallery__link">
+                  <div class="gallery__img">
+                    <img src="images/gallery-3.jpg" srcset="images/gallery-3@2x.jpg" alt="American dream">
+                  </div>
+                  <span class="gallery__category  category">
+                    Photodiary
+                  </span>
+                  <h3 class="gallery__title title">
+                    American dream
+                  </h3>
+                  <div class="gallery__text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item">
+                <a href="#" class="gallery__link">
+                  <div class="gallery__img">
+                    <img src="images/gallery-4.jpg" srcset="images/gallery-4@2x.jpg" alt="A day exploring the Alps">
+                  </div>
+                  <span class="gallery__category  category">
+                    Photodiary
+                  </span>
+                  <h3 class="gallery__title title">
+                    A day exploring the Alps
+                  </h3>
+                  <div class="gallery__text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="subscription">
+          <div class="container">
+            <h2 class="subscription__title title">Sign up for our newsletter!</h2>
+            <form class="subscription__form subscription-form js-form" method="POST" name="subscription" action="#">
+              <div class="subscription-form__inner">
+                <label class="visually-hidden" for="email">Email address</label>
+                <input class="subscription-form__input" type="email" id="email" name="email" placeholder="Enter a valid email address" required>
+                <button class="subscription-form__btn" type="submit" name="submit">
+                  <img src="images/form-icon.png" srcset="images/form-icon@2x.png" alt="Send your email to subscription">
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="gallery">
+          <div class="container">
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <a href="#" class="gallery__link">
+                  <div class="gallery__img">
+                    <img src="images/gallery-5.jpg" srcset="images/gallery-5@2x.jpg" alt="Top 10 song for running">
+                  </div>
+                  <span class="gallery__category  category">
+                    Lifestyle
+                  </span>
+                  <h3 class="gallery__title title">
+                    Top 10 song for running
+                  </h3>
+                  <div class="gallery__text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item">
+                <a href="#" class="gallery__link">
+                  <div class="gallery__img">
+                    <img src="images/gallery-6.jpg" srcset="images/gallery-6@2x.jpg" alt=" Cold winter days">
+                  </div>
+                  <span class="gallery__category  category">
+                    Lifestyle
+                  </span>
+                  <h3 class="gallery__title title">
+                    Cold winter days
+                  </h3>
+                  <div class="gallery__text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <button class="gallery__btn btn btn--white" type="button">
+              Load more
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <!-- footer content -->
+      <div class="container-big">
+        <div class="footer__links external-info">
+          <ul class="external-info__list">
+            <li class="external-info__item">
+              <a href="#" target="_blank" class="external-info__link">
+                Terms and conditions
+              </a>
+            </li>
+            <li class="external-info__item">
+              <a href="#" target="_blank" class="external-info__link">
+                Privacy
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socials socials">
+          <p class="socials__text">Follow</p>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="#" target="_blank" aria-label="Follow on Facebook (opens in a new tab)">
+                <img src="images/facebook.png" srcset="images/facebook@2x.png" alt="facebook icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" target="_blank" aria-label="Follow on Twitter (opens in a new tab)">
+                <img src="images/twitter.png" srcset="images/twitter@2x.png" alt="twitter icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" target="_blank" aria-label="Follow on Instagram (opens in a new tab)">
+                <img src="images/instagram.png" srcset="images/instagram@2x.png" alt="instagram icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

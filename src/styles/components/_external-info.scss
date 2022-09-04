@@ -1,0 +1,31 @@
+/* stylelint-disable */
+.external-info {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+
+    @include media(">=tablet") {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    @include media(">=tablet") {
+      justify-content: flex-start;
+    }
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: 17px;
+    }
+  }
+
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

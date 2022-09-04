@@ -1,0 +1,138 @@
+/* stylelint-disable */
+.info-article {
+  margin-bottom: 73px;
+
+  +.gallery {
+    margin-top: 80px;
+
+    @include media(">=tablet") {
+      margin-top: 100px;
+    }
+
+    @include media(">=desktop") {
+      margin-top: 128px;
+    }
+  }
+
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: 41px;
+    }
+
+    b {
+      font-weight: 900;
+    }
+
+    +.socials {
+      margin-top: 59px;
+
+      .columns & {
+        margin-top: 67px;
+      }
+    }
+  }
+
+  &__link {
+    font-family: $font-family-sans-serif;
+    color: $light-grey;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    .columns & {
+      width: calc(100% + 2px);
+    }
+
+    +img {
+
+      margin-top: 60px;
+
+      .columns & {
+        margin-top: 52px;
+      }
+    }
+  }
+
+  p {
+    padding-right: 2px;
+
+    +img {
+      margin-top: 59px;
+    }
+  }
+
+  blockquote {
+    margin: 0;
+    margin-top: 49px;
+    font-style: italic;
+    font-weight: 400;
+    padding-left: 21px;
+    padding-right: 26px;
+
+    .columns & {
+      margin-top: 51px;
+
+      + p {
+       padding-right: 22px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 23px;
+
+      .columns & {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__socials.socials {
+    text-align: center;
+    color: $light-grey;
+
+    @include media(">=tablet") {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .socials {
+      &__item {
+        &:not(:last-of-type) {
+          margin-right: 16px;
+        }
+      }
+
+      &__link {
+        img {
+          max-width: 18px;
+          max-height: 17px;
+        }
+      }
+
+      &__text.category {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+
+          @include media(">=tablet") {
+            margin-bottom: 0;
+            margin-right: 21px;
+          }
+        }
+
+        @include media(">=tablet") {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

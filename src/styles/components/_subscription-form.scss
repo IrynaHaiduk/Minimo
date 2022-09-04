@@ -1,0 +1,77 @@
+/* stylelint-disable */
+.subscription-form {
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+  }
+
+  &__input {
+    flex-grow: 1;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    background-color: transparent;
+    border: none;
+    background-color: $light;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &::placeholder {
+      @include transition(opacity visibility);
+      color: $grey;
+      font: inherit;
+
+      .subscription-form__input:focus & {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: transparent;
+    }
+
+    &:focus::placeholder {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      transition: background-color 5000000s ease-in-out 0s;
+    }
+  }
+
+  &__btn {
+    @include transition(opacity);
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 32px;
+    height: 17px;
+    margin-right: -1px;
+    margin-top: 4px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+}

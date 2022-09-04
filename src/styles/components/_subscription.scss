@@ -1,0 +1,51 @@
+/* stylelint-disable */
+.subscription {
+  background-color: $light;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  @include media(">=tablet") {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  @include media(">=desktop") {
+    padding-top: 65px;
+    padding-bottom: 74px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 60px;
+
+    @include media(">=tablet") {
+      margin-bottom: 80px;
+    }
+
+    @include media(">=desktop") {
+      margin-bottom: 103px;
+    }
+  }
+
+  &__title.title {
+    color: $dark-grey;
+    letter-spacing: 0.75px;
+    margin-bottom: 50px;
+
+    @include media(">=tablet") {
+      margin-bottom: 60px;
+    }
+
+    @include media(">=desktop") {
+      margin-bottom: 71px;
+    }
+  }
+
+  &__form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 399px;
+    border-bottom: 1px solid $black;
+  }
+}
